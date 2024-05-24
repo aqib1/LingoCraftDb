@@ -1,0 +1,1 @@
+ALTER TABLE public.role ADD CONSTRAINT userId FOREIGN KEY (userId) REFERENCES public.user (id);
