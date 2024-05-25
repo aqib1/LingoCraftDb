@@ -1,1 +1,2 @@
 ALTER TABLE public.role ADD CONSTRAINT userId FOREIGN KEY (userId) REFERENCES public.user (id);
+ALTER TABLE public.language_analysis ADD CONSTRAINT userId FOREIGN KEY (userId) REFERENCES public.user (id);

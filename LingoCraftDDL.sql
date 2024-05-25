@@ -19,6 +19,15 @@ CREATE TABLE public.user
 
 CREATE TABLE public.role(
     id uuid PRIMARY KEY,
-    rolePermissions varchar(255),
-    userId uuid
+    rolePermissions varchar(255) NOT NULL,
+    userId uuid NOT NULL
 );
+
+CREATE TABLE public.language_analysis(
+    id uuid primary key,
+    userId uuid NOT NULL,
+    accumulatedContentScore int NOT NULL,
+    positiveSentimentPercentage text NOT NULL,
+    accumulatedContentSentimentScore text NOT NULL,
+    contentSentimentAnalysisModels jsonb NOT NULL
+)
