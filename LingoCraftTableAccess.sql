@@ -12,6 +12,9 @@ ALTER TABLE public.user
 ALTER TABLE public.role
     OWNER TO postgres;
 
+ALTER TABLE public.language_analysis
+    OWNER TO postgres;
+
 ---
 --- Usage on schema public
 ---
@@ -24,3 +27,4 @@ GRANT USAGE ON SCHEMA public TO postgres;
 
 GRANT SELECT ON TABLE public.user TO postgres;
 GRANT SELECT ON TABLE public.role TO postgres;
+GRANT SELECT ON TABLE public.language_analysis TO postgres;
