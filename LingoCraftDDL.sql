@@ -5,6 +5,8 @@ DATABASE "lingo_craft"
     CONNECTION LIMIT = -1
     IS_TEMPLATE = False;
 
+\c lingo_craft
+
 CREATE TABLE public.user
 (
     id uuid PRIMARY KEY,
@@ -30,4 +32,4 @@ CREATE TABLE public.language_analysis(
     positiveSentimentPercentage text NOT NULL,
     accumulatedContentSentimentScore text NOT NULL,
     contentSentimentAnalysisModels jsonb NOT NULL
-)
+);

@@ -5,5 +5,6 @@ WHERE pg_stat_activity.datname = 'lingo_craft' -- ← change this to your DB
 
 
 DROP DATABASE lingo_craft;
-DROP TABLE public.user;
-DROP TABLE public.role;
+DROP TABLE public.user CASCADE;
+DROP TABLE public.role CASCADE;
+DROP TABLE public.language_analysis CASCADE;
