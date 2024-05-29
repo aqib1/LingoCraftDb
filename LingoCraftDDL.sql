@@ -33,5 +33,3 @@ CREATE TABLE public.language_analysis(
     accumulatedContentSentiment text NOT NULL,
     contentSentimentAnalysisModels jsonb NOT NULL
 );
-
-select * from public.language_analysis;
