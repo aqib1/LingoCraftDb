@@ -28,8 +28,10 @@ CREATE TABLE public.role(
 CREATE TABLE public.language_analysis(
     id uuid primary key,
     userId uuid NOT NULL,
-    accumulatedContentScore int NOT NULL,
+    accumulatedContentSentimentScore int NOT NULL,
     positiveSentimentPercentage text NOT NULL,
-    accumulatedContentSentimentScore text NOT NULL,
+    accumulatedContentSentiment text NOT NULL,
     contentSentimentAnalysisModels jsonb NOT NULL
 );
+
+select * from public.language_analysis;
